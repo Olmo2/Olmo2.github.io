@@ -1,0 +1,27 @@
+.name {
+    font-size: 5rem;
+    color: rgb(192, 0, 0);
+}
+
+.bi {
+    font-size: 6rem;
+}
+
+.mail {
+    font-size: 1.33rem;
+}
+
+hr.estilo {
+    color: black !important;
+    background-color: rgb(192, 0, 0) !important;
+    border: 0.5rem solid !important;
+    border-style: solid rgb(192, 0, 0) !important;
+}
+
+.title {
+    color: rgb(192, 0, 0);
+}
+
+.estudios {
+    margin-top: 1rem;
+}
