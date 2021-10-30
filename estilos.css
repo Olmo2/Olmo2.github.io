@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'digital';
+    src: url('font/digital-7.ttf');
+}
+
+#Oviedo_z718 {
+    font-size: 1.7rem;
+    font-family: digital;
+    color: #00FF41;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    font-size: 1rem;
+}
+
 .list-icon {
     font-size: 2rem;
 }

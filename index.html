@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,8 @@
     <meta property="og:description" content="Esta es mi página personal, espero que os guste jeje." />
     <meta property="og:image" content="https://olmo2.github.io/img/porfile.png" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <link rel="icon" href="/img/favicon.ico" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -26,25 +28,32 @@
 </head>
 
 <body class="container-fluid d-flex flex-column h-100 bg-dark">
-    <!-- <nav class="navbar navbar-expand-sm  navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fas fa-tree" style=color:green;"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-dark justify-content-end bg-dark text-light">
+        <label class="me-2">ES</label>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="navCheck">EN</label>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <div class="container-fluid ">
+            <a class="navbar-brand " href="# "><i class="fas fa-tree " style=color:green;"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><i class="bi bi-file-person"></i> Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#github" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><i class="bi bi-github"></i> Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"> <i class="bi bi-person-lines-fill"></i> Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><i class="bi bi-file-person"></i> Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#github" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"><i class="bi bi-github"></i> Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"> <i class="bi bi-person-lines-fill"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>-->
     <section id="about" container-fluid class="mt-1 p-3">
@@ -55,13 +64,17 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h4 class="card-title">¡Hola! Soy Olmo</h4>
-                        <p class="card-text">Técnico Superior en Desarrollo de Aplicaciones Web/Multiplataforma y los ordenadores son una de mis pasiones, junto con el cine y el deporte.</p>
-                        <p class="card-text"> Me encanta la programación, me desenvuelvo bien en entornos desconocidos y tecnologías que me son extrañas, aprendo rápido y me adapto a las situaciones con agilidad, aprender es una de las mejores cosas que existen, me apasiona
-                            conocer y descubrir tecnologías nuevas, que presenten retos y aumentar mi repertorio.
+                        <h4 class="card-title" lang="es">¡Hola! Soy Olmo 👋</h4>
+                        <h4 class="card-title" lang="en">Hello there! I´m Olmo 👋</h4>
+                        <p class="card-text" id="descripcion" lang="es">
+                            Técnico Superior en Desarrollo de Aplicaciones Web y Aplicaciones Multiplataforma, los ordenadores son una de mis pasiones, junto con el cine 🎥 y el deporte 🏈.
+                        </p>
+                        <p class="card-text" id="descripcion" lang="en">
+                            Senior technician in Web Development & Mobile Development, computers are one of my passions in addition to cinema🎥 and sports 🏈.
                         </p>
                         <article class="card-text">
-                            <p>Manejo las siguientes Herramientas y Tecnologias</p>
+                            <h5 lang="es">Manejo las siguientes Herramientas y Tecnologias 🤖</h5>
+                            <h5 lang="en">I am fluent in the the following tools and technologies 🤖</h5>
                             <ul class="list-group list-group-horizontal">
                                 <li class="list-group-item  bg-dark text-light">
                                     <a href="https://www.git-scm.com" title="Git">
@@ -181,10 +194,13 @@
 
                         </article>
 
-                        <p>Actualmente estoy trabajando como FullStack Developer con
+                        <p lang="es">Actualmente estoy trabajando como FullStack Developer con
                             <img width="34rem" src="https://img.icons8.com/color/50/000000/angularjs.png" /> Angular /<img width="34rem" src="https://img.icons8.com/color/50/000000/spring-logo.png" /> Spring
                         </p>
-                        <p class="card-text"><small class="text-muted">Last updated 17/09/2021</small></p>
+                        <p lang="en">Currently working as a Fullstack Developer with
+                            <img width="34rem" src="https://img.icons8.com/color/50/000000/angularjs.png" /> Angular /<img width="34rem" src="https://img.icons8.com/color/50/000000/spring-logo.png" /> Spring
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 30/10/2021</small></p>
                     </div>
                 </div>
             </div>
@@ -192,15 +208,25 @@
     </section>
 
 
-    <!--<section id="github">
 
-    </section>
+    <!--
     <section id="contact">
 
     </section>-->
-    <footer class="footer d-flex flex-wrap justify-content-center ">
+    <footer class="footer d-flex flex-wrap justify-content-between ">
+        <img src="img/sign.svg" width="65rem">
 
-        <ul class="nav col-md-4 mr-3 justify-content-center list-unstyled d-flex">
+        <section id="time">
+            <a href="https://time.is/Oviedo" id="time_is_link" rel="nofollow"></a>
+            <p id="Oviedo_z718"></p>
+            <script src="//widget.time.is/t.js"></script>
+            <script>
+                time_is_widget.init({
+                    Oviedo_z718: {}
+                });
+            </script>
+        </section>
+        <ul class="col-md-2 justify-content-center list-unstyled d-flex">
             <li class="ms-3">
                 <a href="https://www.linkedin.com/in/olmo-tamargo-suárez" title="LinkedIn">
                     <i class="bi bi-linkedin footer-icon" style="color:skyblue"></i>
