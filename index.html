@@ -29,9 +29,34 @@
 
 <body class="container-fluid d-flex flex-column h-100 bg-dark">
     <nav class="navbar navbar-dark justify-content-end bg-dark text-light">
-        <label class="me-2">ES</label>
+        <!-- <label class="me-2">ES</label>
         <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" id="navCheck">EN</label>
+        </div>-->
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-translate" id="traslate"></i>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-sm bg-dark">
+                <div class="modal-content bg-dark">
+                    <div class="modal-body bg-dark justify-content-center">
+                        <div class="btn-group-vertical col-12" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="ESPradio" autocomplete="off" data-bs-dismiss="modal" checked>
+                            <label class="btn btn-outline-primary mb-2 mt-2" id="ESP" for="ESPradio">Español</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="ASTradio" autocomplete="off" data-bs-dismiss="modal">
+                            <label class="btn btn-outline-primary mb-2" id="AST" for="ASTradio">Asturianu</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="ENGradio" autocomplete="off" data-bs-dismiss="modal">
+                            <label class="btn btn-outline-primary mb-2" id="ENG" for="ENGradio">English</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
@@ -65,16 +90,22 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <h4 class="card-title" lang="es">¡Hola! Soy Olmo 👋</h4>
+                        <h4 class="card-title" lang="ast">¡Hola! Soi Olmo 👋</h4>
                         <h4 class="card-title" lang="en">Hello there! I´m Olmo 👋</h4>
                         <p class="card-text" id="descripcion" lang="es">
                             Técnico Superior en Desarrollo de Aplicaciones Web y Aplicaciones Multiplataforma, los ordenadores son una de mis pasiones, junto con el cine 🎥 y el deporte 🏈.
+                        </p>
+                        <p class="card-text" id="descripcion" lang="ast">
+                            Técnicu Cimeru en Desenvolvimientu d'Aplicaciones Web y Aplicaciones Multiplataforma, los ordenadores son una de les mios pasiones, xuntu col cine 🎥 y el deporte 🏈.
                         </p>
                         <p class="card-text" id="descripcion" lang="en">
                             Senior technician in Web Development & Mobile Development, computers are one of my passions in addition to cinema🎥 and sports 🏈.
                         </p>
                         <article class="card-text">
                             <h5 lang="es">Manejo las siguientes Herramientas y Tecnologias 🤖</h5>
-                            <h5 lang="en">I am fluent in the the following tools and technologies 🤖</h5>
+                            <h5 lang="ast">Manexo les siguientes Ferramientes y Teunoloxías 🤖
+                            </h5>
+                            <h5 lang="en">I am fluent in the the following Tools and technologies 🤖</h5>
                             <ul class="list-group list-group-horizontal">
                                 <li class="list-group-item  bg-dark text-light">
                                     <a href="https://www.git-scm.com" title="Git">
@@ -197,10 +228,15 @@
                         <p lang="es">Actualmente estoy trabajando como FullStack Developer con
                             <img width="34rem" src="https://img.icons8.com/color/50/000000/angularjs.png" /> Angular /<img width="34rem" src="https://img.icons8.com/color/50/000000/spring-logo.png" /> Spring
                         </p>
+                        <p lang="ast">Anguaño toi trabayando como FullStack Developer con
+                            <img width="34rem" src="https://img.icons8.com/color/50/000000/angularjs.png" /> Angular /<img width="34rem" src="https://img.icons8.com/color/50/000000/spring-logo.png" /> Spring
+                        </p>
                         <p lang="en">Currently working as a Fullstack Developer with
                             <img width="34rem" src="https://img.icons8.com/color/50/000000/angularjs.png" /> Angular /<img width="34rem" src="https://img.icons8.com/color/50/000000/spring-logo.png" /> Spring
                         </p>
-                        <p class="card-text"><small class="text-muted">Last updated 30/10/2021</small></p>
+                        <p class="card-text" lang="es"><small class="text-muted">Última actualización 31/10/2021 🎃</small></p>
+                        <p class="card-text" lang="ast"><small class="text-muted">Última actualización 31/10/2021 🎃</small></p>
+                        <p class="card-text" lang="en"><small class="text-muted">Last updated 31/10/2021 🎃</small></p>
                     </div>
                 </div>
             </div>

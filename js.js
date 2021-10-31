@@ -1,13 +1,30 @@
 $('[lang="en"]').hide();
+$('[lang="ast"]').hide();
 
-$('#navCheck').on('change.bootstrapSwitch', function(e) {
+$('input:radio[name=btnradio]').change(function(e) {
     //Inglés
-    if (e.target.checked) {
-        $('[lang="en"]').toggle();
-        $('[lang="es"]').hide();
-        //Español
-    } else {
-        $('[lang="es"]').toggle();
-        $('[lang="en"]').hide();
+    switch (e.target.id) {
+        case "ESPradio":
+            $('[lang="es"]').toggle();
+            $('[lang="en"]').hide();
+            $('[lang="ast"]').hide();
+            break;
+        case "ASTradio":
+            $('[lang="ast"]').toggle();
+            $('[lang="es"]').hide();
+            $('[lang="en"]').hide();
+            break;
+        case "ENGradio":
+            $('[lang="en"]').toggle();
+            $('[lang="es"]').hide();
+            $('[lang="ast"]').hide();
+            break;
     }
+    /* if (e.target.checked) {
+         $('[lang="en"]').toggle();
+         $('[lang="es"]').hide();
+         //Español
+     } else {
+        
+     }*/
 });

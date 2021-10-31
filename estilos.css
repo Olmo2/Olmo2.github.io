@@ -9,6 +9,54 @@
     color: #00FF41;
 }
 
+#ESPradio:checked+#ESP {
+    background-color: #292b2c;
+    background-image: url(img/ESP.png);
+    background-size: 3.6rem;
+    color: black;
+}
+
+#ESPradio:hover+#ESP {
+    background-color: #292b2c;
+    background-image: url(img/ESP.png);
+    background-size: 3.6rem;
+    color: black;
+}
+
+#ASTradio:checked+#AST {
+    background-image: url(img/ASTButton.png);
+    background-size: 15rem;
+    background-position: center;
+}
+
+#ASTradio:hover+#AST {
+    background-image: url(img/ASTButton.png);
+    background-size: 15rem;
+    background-position: center;
+}
+
+#ENGradio:checked+#ENG {
+    background-color: #292b2c;
+    background-image: url(img/UKButton.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+#ENGradio:hover+#ENG {
+    background-color: #292b2c;
+    background-image: url(img/UKButton.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+#traslate {
+    font-size: 1.5rem;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
